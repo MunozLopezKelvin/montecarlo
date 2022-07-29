@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>Tarea Montecarlo</title>
+{% endblock %}
+
+
+{% block content %}
+<div class="container py-3">
+    <br>
+    <h3 class="text-left">Ejercició de la lección.</h3>
+    <p class="enunciado text-left">Una empresa del medio, dedicada al ensamblado de aparatos de aparatos de telefonía,
+        cuenta actualmente con 9 operarios y cada uno con una producción de 28 aparatos terminados.
+        Se ensamblan tantos aparatos como lo exija la demanda. La demanda tiene la siguiente probabilidad
+        estadística:</p>
+    <p class="enunciado">Se desea conocer:
+        <ul class="enunciado">
+            a)	La cantidad de operarios necesarios para la producción en
+                los próximos 20 días atendiendo la mayor cantidad de demanda posible y sin tener tiempos ociosos.
+                <br>
+            b)	Diseñe alguna alternativa para optimizar la producción del negocio
+        </ul>
+    </p>
+</div>
+<div class="container w-50 text-center">
+    <legend class="text-left">Tabla Proporcionada.</legend>
+</div><br>
+
+<div class="container w-50">
+    {{data|safe}}
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <a class="btn btn-secondary" href="resolucion" role="button">Resolver.</a>
+    </div>
+</div>
+
+{% endblock %}

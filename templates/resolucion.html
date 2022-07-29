@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>Tarea Montecarlo</title>
+{% endblock %}
+
+
+{% block content %}
+<!--<div class="container text-center py-3">-->
+<!--    <h3>Ejercicio Planteado</h3>-->
+<!--    <p class="enunciado  ">Una empresa del medio, dedicada al ensamblado de aparatos de aparatos de telefonía,-->
+<!--        cuenta actualmente con 9 operarios y cada uno con una producción de 28 aparatos terminados.-->
+<!--        Se ensamblan tantos aparatos como lo exija la demanda. La demanda tiene la siguiente probabilidad-->
+<!--        estadística:</p>-->
+<!--</div>-->
+<div class="container w-50 text-center py-3">
+    <legend class="text-left header">Tabla (demanda acumulada)</legend>
+    {{data2|safe}}
+</div><br>
+<div class="container w-75 text-center py-3">
+    <p>El siguiente paso es agregar los valores máximos y mínimos de cada probabilidad.</p>
+    <legend class="text-left header">Valores Mínimos y Máximos</legend>
+    {{data3|safe}}
+</div><br>
+<p class="text-center" >Los siguiente numeros aleatorios son proporcionados por el profesor..</p>
+<div class="container w-75 text-center py-3">
+    <legend class="text-left header">Tabla de los números aleatorios.</legend>
+    {{nuevata|safe}}
+</div><br>
+
+<p class="text-center" >Tabla de números simulados junto a los numeros aleatorios:</p>
+<div class="container w-75 text-center py-3">
+    <legend class="text-left header">Simulación y números aleatorios.</legend>
+    {{data4|safe}}
+</div><br>
+
+<div class="container w-75 text-center py-3">
+    <legend class="text-left header">Resultados arrojados:</legend>
+    La cantidad del productos es: {{data9}} <br>
+    El promedio de las demandas es: {{data10}}
+</div><br>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+.navbg{
+    background-color: #87867a;
+}
+.navbar  {
+    font-size: 22px;
+}
+.logo {
+    /* padding: 15px 0; */
+    width: 150px;
+    cursor: pointer;
+}
+
+.enunciado {
+    font-size: 20px;
+}
